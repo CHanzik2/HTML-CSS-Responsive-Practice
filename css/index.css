@@ -89,6 +89,7 @@ section {
     padding: 4% 0;
 }
 
+/* nav / header section */
 nav {
     display: flex;
     justify-content: space-between;
@@ -115,8 +116,119 @@ nav {
 header {
     height: 80vh;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-image: url('../images/header.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+    text-align: center;
+    align-content: center;
+}
+
+/* about section */
+
+#about {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url('../images/about-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20% 0;
+}
+
+#about div {
+    width: 20%;
+    margin-right: 10%;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.container p {
+    text-align: justify;
+}
+
+.container div {
+    width: 50%;
+}
+
+.container .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0;
+}
+
+.bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.succulents {
+    background-image: url('../images/succulants.jpg');
+}
+
+
+.cacti {
+    background-image: url('../images/cacti.jpg');
+}
+
+.tropicals {
+    background-image: url('../images/tropicals.jpg');
+}
+
+.footer {
+    padding: 4% 0;
+}
+
+.footer-container {
+    display: flex;
+    background-color: ;
+}
+
+.left, .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper {
+    width: 50%;
+}
+
+.copyright {
+    text-align: right;
+    margin-right: 10%;
+}
+
+.title {
+    color: white;
+}
+
+@media(max-width: 800px) {
+        #about {
+            background-position: left top;
+        }
+        
+        #about div {
+            margin-top: 5%;
+            width: 35%;
+        }
+
+        .container .text div {
+            width: 70%;
+        }
+
+        .container p {
+            text-align: left;
+        }
+
+        .img-wrapper {
+            width: 70%;
+        }
 }
